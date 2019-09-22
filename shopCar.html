@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/shopCar.css" rel="stylesheet" type="text/css">
+<script src="js/vue.js"></script>
+</head>
+<body>
+<div class="musicBox">
+	<audio id="music" src="music/yinyue.mp3"></audio>
+</div>
+
+<div class="headerBar">
+	<a name="top"></a>
+	<div class="topBar">
+		<div class="">
+			<div class="leftArea fl">
+				<a href="#">收藏本站</a>
+			</div>
+			<div class="rightArea fr">
+				<span>欢迎来到趣购网！</span>
+				<span id="lg">
+					<a v-if="loginState">欢迎  {{user}}  用户</a>
+					<a v-else href="login.html" target="_parent">登陆</a>
+					<a v-if="loginState" href="" onClick="quit()">退出登录</a>
+				</span>
+				<a href="register.html" target="_parent" target="_parent">[免费注册]</a>
+				<a href="#">[联系客服]</a>
+				<a href="index.html" target="_parent" target="_parent">[网站首页]</a>
+			</div>
+		</div>
+	</div><!--topBar结束-->
+	<div class="logoBar">
+		<div class="logoBar_box">
+			<div class="logo fl"><img src="images/logo.png"></div>
+			<div class="search_box fl">
+				<input type="text" class="search_text"><button class="button1">搜  索</button>
+			</div>
+			<div class="shopCar fr">
+				<span class="shop_text"><a href="shopCar.html" target="_parent">购物车</a></span><span class="shop_num">3</span>
+			</div>
+		</div>
+	</div><!--logoBar结束-->
+	<a name="navBar"></a>
+	<a name="navBar"></a>
+	<div class="navBar">
+		<div class="navBar_box">
+			<div class="shopClass fl">
+				<span class="classify">商品分类</span>
+			</div>
+			<ul class="nav fl">
+				<li class="active"><a href="#">数码城</a></li>
+				<li><a href="#">司法拍卖</a></li>
+				<li><a href="#">二手特卖</a></li>
+				<li><a href="#">电器城</a></li>
+				<li><a href="#">超值团购</a></li>
+				<li><a href="#">名品汇</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="shopCar_box">
+	<table id="cartTable">
+		<tr>
+			<td id="checkedAll"><input type="checkbox" class="checkAll check">全选</td>
+			<td></td>
+			<td>商品信息</td>
+			<td style="text-align: center;">单价</td>
+			<td style="text-align: center;">数量</td>
+			<td style="text-align: center;">小计</td>
+			<td style="text-align: center;">操作</td>
+		</tr>
+		<tr class="tr">
+			<td id="checked"><input type="checkbox" class="check"></td>
+			<td id="goodsImg"><image src="images/foot2_9.jpg"></image></td>
+			<td id="detail">相机</td>
+			<td id="price">8999</td>
+			<td id="shuliang"><span class="reduce">-&nbsp;</span><input type="text" value="1" id="number"><span class="add">&nbsp;+</span></td>
+			<td id="sum">8999</td>
+			<td id="operate"><a href="">删除宝贝</a></td>
+		</tr>
+		<tr class="tr">
+			<td id="checked"><input type="checkbox" class="check"></td>
+			<td id="goodsImg"><image src="images/foot2_7.jpg"></image></td>
+			<td id="detail">kindel</td>
+			<td id="price">1999</td>
+			<td id="shuliang"><span class="reduce">-&nbsp;</span><input type="text" value="1" id="number"><span class="add">&nbsp;+</span></td>
+			<td id="sum">1999</td>
+			<td id="operate"><a href="">删除宝贝</a></td>
+		</tr>
+		<tr class="tr">
+			<td id="checked"><input type="checkbox" class="check"></td>
+			<td id="goodsImg"><image src="images/foot2_8.jpg"></image></td>
+			<td id="detail">笔筒</td>
+			<td id="price">19.99</td>
+			<td id="shuliang"><span class="reduce">-&nbsp;</span><input type="text" value="1" id="number"><span class="add">&nbsp;+</span></td>
+			<td id="sum">19.99</td>
+			<td id="operate"><a href="">删除宝贝</a></td>
+		</tr>
+	</table>
+	
+</div><!--shopCar_box结束-->
+<div class="jiesuan">
+		<div class="count fr" onclick="jiesuan()">结算<span id="count"></span></div>
+		<div class="fr">合计：<span id="total">0.00</span></div>
+		<div class="fr">已选商品<span id="selected">0</span>件</div>
+	</div>
+<div class="endBar">
+	<div class="endBar_head fl">
+		——————&nbsp;&nbsp;&nbsp;END&nbsp;&nbsp;&nbsp;—————
+	</div>
+	<div class="endBar_content fl">
+		<div class="endBar_content_box fl">
+			<div class="endBar_box_bg end1">消费者保障</div>
+			<div class="endBar_box_a">
+				<a href="#">保障范围</a>
+				<a href="#">退货退款流程</a>
+				<a href="#">服务中心</a>
+				<a href="#">更多特色服务</a>
+			</div>
+		</div>
+		<div class="endBar_content_box fl">
+			<div class="endBar_box_bg end2">新手上路</div>
+			<div class="endBar_box_a">
+				<a href="#">新手专区</a>
+				<a href="#">消费警示</a><br />
+				<a href="#">安全交易</a>
+				<a href="#">24小时在线服务</a>
+				<a href="#">免费开店</a>
+			</div>
+		</div>
+		<div class="endBar_content_box fl">
+			<div class="endBar_box_bg end3">付款方式</div>
+			<div class="endBar_box_a">
+				<a href="#">快捷支付</a>
+				<a href="#">信用卡</a><br />
+				<a href="#">蚂蚁花呗</a>
+				<a href="#">余额宝</a><br />
+				<a href="#">货到付款</a>
+			</div>
+		</div>
+		<div class="endBar_content_box fl">
+			<div class="endBar_box_bg  end4">特色淘货</div>
+			<div class="endBar_box_a">
+				<a href="#">手机 APP</a>
+				<a href="#">大众评审</a><br />
+				<a href="#">客服专线</a>
+				<a href="#">微信联系</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="controlMusic">
+	<a onClick="play()"><div class="fixed_nav_top content1"><span>音乐<br />播放</span></div></a>
+	<a onClick="pause()"><div class="fixed_nav_top content2"><span>音乐<br />暂停</span></div></a>
+	<a onClick="load()"><div class="fixed_nav_top content3"><span>音乐<br />重载</span></div></a>
+	<a onClick="up()"><div class="fixed_nav_top content2"><span>音量<br />增大</span></div></a>
+	<a onClick="down()"><div class="fixed_nav_top content3"><span>音量<br />减小</span></div></a>
+</div>
+
+<script src="js/shopCar.js"></script>
+</body>
+</html>

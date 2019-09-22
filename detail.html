@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/detail.css" rel="stylesheet" type="text/css">
+<script src="js/vue.js"></script>
+</head>
+<body>
+<div style=" width:100%; height:152px; overflow:hidden ">
+    <div style=" margin-top:0;">
+       <iframe src="shopCar.html" width="100%"; height="1000px" frameborder="0" scrolling="no" >
+       </iframe>
+     </div>
+</div>
+
+<div class="db">
+	<div class="detail_img fl">
+		<div class="big_img fl"><image  id="big_img" src="images/detail_1.jpg"></image></div>
+		<div class="small_img fl"><image src="images/detail_10.jpg" onmousemove="changeImg1()"></image></div>
+		<div class="small_img fl"><image src="images/detail_2.jpg" onmousemove="changeImg2()"></image></div>
+		<div class="small_img fl"><image src="images/detail_3.jpg" onmousemove="changeImg3()"></image></div>
+		<div class="small_img fl"><image src="images/detail_4.jpg" onmousemove="changeImg4()"></image></div>
+	</div>
+	<div class="datail_text fl">
+		<div class="dt_title fl"><h1>Nike 耐克官方NIKE AIR FORCE 1 '07男子运动鞋 315122</h1></div>
+		<div class="dt_price fl">价格<span>￥749.00</span></div>
+		<div class="dt_freight fl">运费<span>上海  至  广州&or;快递包邮</span></div>
+		<div class="dt_sales fl"><span>月销量<text>9000+</text></span><span>累计评价<text>28354</text></span><span>购买送积分<text>749</text></span></div>
+		<div class="dt_shoeSize fl" id="choeSize">鞋码<span style="border: 1px solid #838383;">40</span><span style="border: 1px solid #838383;">41</span><span style="border: 1px solid #838383;">42</span><span style="border: 1px solid #838383;">42.5</span><span style="border: 1px solid #838383;">43</span><span style="border: 1px solid #838383;">44</span><span style="border: 1px solid #838383;">44.5</span><span style="border: 1px solid #838383;">45</span></div>
+		<div class="dt_color fl" id="choeColor"><span class="fl">颜色</span><div class="dt_color_img fl"><image src="images/detail_5.jpg" style="border: 1px solid #838383;"></image><image src="images/detail_6.jpg" style="border: 1px solid #838383;"></image></div></div>
+		<div class="dt_shuliang fl">
+			数量
+			<span class="s1">
+				<span class="reduce" onclick="reduce()"> - </span><input type="text" value="1" id="number"><span class="add" onclick="add()">+</span>
+				<span class="s4">库存32290</span>
+			</span>
+		</div>
+		<div class="dt_huabei fl" id="huabei">分期<span class="fenqi_price" style="border: 1px solid #838383;"><span>￥255.40×3期</span><span>(含手续费)</span></span>
+			<span class="fenqi_price" style="border: 1px solid #838383;"><span>￥255.40×3期</span><span>(含手续费)</span></span>
+			<span class="fenqi_price" style="border: 1px solid #838383;"><span>￥255.40×3期</span><span>(含手续费)</span></span>
+		</div>
+		<div class="dt_button fl">
+			<input class="dt_car" type="button" value="加入购物车">
+			<input class="dt_buy" type="button" value="立即购买" onclick="pay()">
+		</div>
+	</div>
+	
+</div>
+<div style=" width:100%; height:300px; overflow:hidden;">
+    <div style=" margin-top:-695px;">
+       <iframe src="shopCar.html" width="100%"; height="1000px" frameborder="0" scrolling="no"">
+       </iframe>
+     </div>
+</div>
+
+<script src="js/detail.js"></script>
+</body>
+</html>

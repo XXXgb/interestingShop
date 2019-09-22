@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/login.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="head">
+	<div class="logoBar">
+			<div class="logoBar_box">
+				<div class="logo fl" onmousemove="go()" onmouseout="stop()" onmouse><img src="images/logo.png"></div>
+			</div>
+	</div>
+</div><!--head结束-->
+
+<div class="body">
+	<div class="loginBox fl"  id="bd" style="margin-left: -350px;">
+		<div class="loginText fl">密码登录</div>
+		<div class="userImg fl">
+			<input type="text" id="user"  placeholder="用户名请随意输入"></input>
+			<input type="button"  class="delete" onclick="deleteValue()"> 
+		</div>
+		<div class="passwordImg fl">
+			<input type="password" id="password" placeholder="默认密码为123">
+		</div>
+		<div class="fl">
+			<input type="button" value="登录" class="submit" onclick="tijiao('user')">
+		</div>
+		<div class="zhuce fl">
+			<div class="change fl"><div class="fl"></div><a href="">修改密码</a></div>
+			<div class="register fl"><div class="fl"></div><a href="register.html">免费注册</a></div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="tiaozhuan fl">
+		<input type="button" value="点击登录" onclick="login()" id="loginId">
+	</div>
+	
+</div>
+<script src="js/login.js"></script>
+<script src="js/vue.js"></script>
+</body>
+</html>

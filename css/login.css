@@ -1,0 +1,154 @@
+.logoBar{
+	width:100%;
+	height:85px;
+	background-color: #fff;
+}
+.logoBar_box{
+	width:1000px;
+	margin: 0 auto;
+}
+.logo{
+	width:189px;
+	padding-left: 39px;
+	padding-top: 13px;
+}
+
+.body{
+	background: url(../images/login-background.jpg) no-repeat;
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+.loginBox{
+	width:350px;
+	height:330px;
+	margin-top: 100px;
+
+	background-color: rgba(255,255,255,.9);
+}
+.loginText{
+	width: 325px;
+	height: 25px;
+	font-size: 20px;
+	padding-top: 25px;
+	padding-left: 25px;
+}
+.userImg{
+	background: url(../images/user.png) no-repeat 10px;
+	background-position: 20px 22px;
+	position: relative;
+}
+.delete{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top:28px;
+	right:8px;
+	background: url(../images/叉号.png);
+	border: none;
+}
+.passwordImg{	
+	background: url(../images/password.png) no-repeat 10px;
+	background-position: 20px 22px;
+}
+#user{
+	margin-top: 20px;
+	width:260px;
+	height:35px;
+	margin-left: 60px;
+	padding-left: 5px;
+	border:0.5px solid #000;
+	border-radius: 5px;
+}
+#password{
+	margin-top: 20px;
+	width:260px;
+	height:35px;
+	margin-left: 60px;
+	padding-left: 5px;
+	border:0.5px solid #000;
+	border-radius: 5px;
+}
+.submit{
+	margin-top: 30px;
+	margin-left: 20px;
+	width:305px;
+	height: 45px;
+	background-color: #f40;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	color: #fff;
+}
+.zhuce{
+	
+	margin-top: 40px;
+	margin-left: 139px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.change{
+	margin-right: 25px;
+}
+.change div{
+	width: 22px;
+	height: 22px;
+	background: url(../images/修改.png) no-repeat;
+	margin-right: 3px;
+}
+.register div{
+	width: 22px;
+	height: 22px;
+	background: url(../images/注册.png) no-repeat;
+	margin-right: 3px;
+}
+.tiaozhuan{
+	width:80px;
+	height: 50px;
+	margin-left: 350px;
+	position: absolute;
+	top:230px;
+	left: -100px;
+}
+.tiaozhuan input{
+	width:150px;
+	height: 100px;
+	background-color: #80b2ff;
+	border:none;
+	border-radius: 5px;
+	font-size: 22px;
+	color:#fff;
+}
+.tiaozhuan2{
+	width:80px;
+	height: 50px;
+	margin-left: 350px;
+	position: absolute;
+	top:230px;
+	left: 100px;
+}
+.tiaozhuan2 input{
+	width:150px;
+	height: 100px;
+	background-color: #80b2ff;
+	border:none;
+	border-radius: 5px;
+	font-size: 22px;
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

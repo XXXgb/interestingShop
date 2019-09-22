@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/register.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="head">
+	<div class="logoBar">
+			<div class="logoBar_box">
+				<div class="logo fl"><img src="images/logo.png"></div>
+			</div>
+	</div>
+</div><!--head结束-->
+<div class="body">
+	<div class="loginBox fl" id="bd">
+		<div class="registerText fl">用户注册</div>
+		<div class="user fl">
+			用户名：<input type="text" id="user" placeholder="必填">
+		</div>
+		<div class="password fl">
+			密&nbsp;&nbsp;&nbsp;码：<input type="password" id="password" placeholder="必填">
+		</div>
+		<div class="repeatPassword fl">
+			确认密码：<input type="password" id="repeatPassword" placeholder="必填">
+		</div>
+		<div class="idCar fl">
+			身份证：<input type="text" id="idCar" placeholder="必填">
+		</div>
+		<div class="phoneNumber fl">
+			手机号：<input type="text" id="phoneNumber" placeholder="必填">
+		</div>
+		<div class="sex fl">
+			性&nbsp;&nbsp;&nbsp;别：
+			<input type="radio" name="sex" checked id="sex">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="sex">女
+		</div>
+		<div class="fl">
+			<input type="button" value="马上注册" class="register" onclick="register()">
+		</div>
+		<div class="zhuce fl">
+			<div class="login fl"><div class="fl"></div><a href="login.html">登录</a></div>
+		</div>
+	</div>
+	
+</div>
+<script src="js/register.js"></script>
+</body>
+</html>
